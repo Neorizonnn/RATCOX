@@ -1,0 +1,444 @@
+
+/* 
+   GLOBAL RESET
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 80px;
+
+    font-family: Arial, sans-serif;
+
+    background: black;
+    color: #1d2939;
+    background-image: url('img/bg2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+
+/* 
+   MAIN CONVERTER
+ */
+
+.converter {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* 
+   LOGO
+ */
+
+.logo {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* 
+   CONVERTER BODY
+ */
+
+.converter-body {
+    width: 100%;
+    padding: 35px;
+    margin-bottom: 90px;
+    
+
+    background: rgba(45, 18, 18, 0.19);
+
+    border: 1px solid #e4e9f0;
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08),
+        0 4px 10px rgba(15, 23, 42, 0.04);
+}
+
+
+/* 
+   HEADING
+ */
+
+.converter-body h1 {
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: whitesmoke;
+}
+
+
+/* 
+   AMOUNT SECTION
+ */
+
+.amount-section {
+    margin-bottom: 25px;
+}
+
+.amount-section label,
+.currency-box label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: whitesmoke;
+}
+
+.amount-section input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+    color: #101828;
+
+    background: #ffffff;
+
+    transition: 0.2s ease;
+}
+
+.amount-section input:focus {
+    border-color: #2563eb;
+
+    
+}
+
+.amount-section input::placeholder {
+    color: #98a2b3;
+}
+
+
+/* 
+   CURRENCY SECTION
+ */
+
+.currency-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.currency-box {
+    flex: 1;
+}
+
+.currency-box select {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #101828;
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.currency-box select:focus {
+    border-color: #2563eb;
+
+    
+}
+
+
+/* 
+   SWAP BUTTON
+ */
+
+.swap-btn {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #2563eb;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.swap-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+
+    border-color: #2563eb;
+
+    transform: rotate(180deg);
+}
+
+.swap-btn:active {
+    transform: rotate(180deg) scale(0.94);
+}
+
+
+/* 
+   CONVERT BUTTON
+ */
+
+.convert-btn {
+    width: 100%;
+    height: 54px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.20);
+}
+
+.convert-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.25);
+}
+
+.convert-btn:active {
+    transform: translateY(0);
+}
+.error-message {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* 
+   RESULT
+ */
+
+.result {
+    margin-top: 25px;
+    padding: 25px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 1px solid ;
+    border-radius: 20px;
+
+}
+
+/* 
+   TABLET
+ */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px 40px;
+        background-size: cover;
+    }
+
+    .converter {
+        max-width: 480px;
+    }
+
+    .converter-body {
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+    .logo {
+        margin-top: 40px;
+    }
+
+
+}
+
+
+/* 
+   MOBILE
+ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        background-size: cover;
+    }
+
+    .converter {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .converter-body {
+        padding: 22px;
+        margin-bottom: 30px;
+        border-radius: 16px;
+    }
+
+    .converter-body h1 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    .amount-section {
+        margin-bottom: 20px;
+    }
+
+    .amount-section input {
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .currency-section {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .currency-box select {
+        height: 48px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+
+    .currency-box label,
+    .amount-section label {
+        font-size: 13px;
+    }
+
+    .swap-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 21px;
+    }
+
+    .convert-btn {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .result {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* 
+   SMALL MOBILE
+ */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 15px;
+        
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .converter-body {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .converter-body h1 {
+        font-size: 22px;
+    }
+
+    .currency-section {
+        gap: 6px;
+    }
+
+    .currency-box select {
+        height: 45px;
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .swap-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .amount-section input {
+        height: 46px;
+    }
+
+    .convert-btn {
+        height: 48px;
+    }
+
+    .result {
+        padding: 17px;
+    }
+
+}
