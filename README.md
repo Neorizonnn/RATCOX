@@ -32,23 +32,23 @@ The application stores the fetched exchange rates in the browser in local storag
 
 ## ✨ Features
 
-💱 Converts upto 145+ currencies
-🔄 Swap currencies instantly
-📡 Fetches exchange-rate data from an API
-💾 Stores exchange rates locally using **localStorage**
-🕐 Updates stored exchange rates every 24 hours
-⚡ Performs conversions locally after rates are fetched
-📱 Responsive design
-🎨 Clean and simple user interface
+- 💱 Converts upto 145+ currencies
+- 🔄 Swap currencies instantly
+- 📡 Fetches exchange-rate data from an API
+- 💾 Stores exchange rates locally using **localStorage**
+- 🕐 Updates stored exchange rates every 24 hours
+- ⚡ Performs conversions locally after rates are fetched
+- 📱 Responsive design
+- 🎨 Clean and simple user interface
 
 ---
 
 ## 🛠️ Built With
 
-**HTML5** — Website structure and semantic markup
-**CSS3** — Styling, layouts and responsive design
-**Vanilla JavaScript** — Application logic and currency calculations
-**Exchange Rate API**  — For currency exchange rates data
+- **HTML5** — Website structure and semantic markup
+- **CSS3** — Styling, layouts and responsive design
+- **Vanilla JavaScript** — Application logic and currency calculations
+- **Exchange Rate API**  — For currency exchange rates data
 
 ## 📂 Project Structure
 
